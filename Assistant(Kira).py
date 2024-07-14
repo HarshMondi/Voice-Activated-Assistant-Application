@@ -14,8 +14,8 @@ def say(text):
     engine.say(text)
     engine.runAndWait()
 def start():
-    print('Hello, myself Alexa, how may i help you')
-    say('Hello, myself Alexa, how may i help you')
+    print('Hello, myself Kira, how may i help you')
+    say('Hello, myself Kira, how may i help you')
 
 start()
 def input_command():
@@ -28,7 +28,7 @@ def input_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             if 'Alexa' in command:
-                command = command.replace('Alexa','')
+                command = command.replace('Kira','')
 
 
     except:
